@@ -1,0 +1,51 @@
+/* 
+    Seletor de Tag = "NOME DA TAG"
+    Seletor de Id = "#" id=
+    Seletor de Classe "." class=
+    Seletor de Atributo "[atributo='valor']"
+*/
+
+body {margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+header {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+footer {
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.rodape {
+    height: 50px;
+    background-image: url(rodape1.jpg);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: smaller;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    border: 3px solid #ccc;
+ }
+.botao {
+    background-color: rgb(157, 255, 190);
+    justify-content: Justify;
+    color: #000;
+    border: 1px;
+    margin-top: 10px;
+    margin: 20px;
+    margin-bottom: 30px ;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.final {
+    margin-bottom: 100px;
+}
+
+.cabecalho {
+    background-image: url(rodape1.jpg);
+   
+
+}
