@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Front-End</title>
+    <link rel="stylesheet" href="atividade.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: ubuntu, sans-serif;
+        }
+
+        /* Cabeçalho fixo */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #3498db;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            z-index: 1000;
+        }
+
+        /* Menu lateral */
+        .menu {
+            float: left;
+            width: 10%;
+            height: 800px;
+            background: #ecf0f1;
+            padding: 20px;
+            margin-top: 0px;
+
+            /* espaço abaixo do cabeçalho */
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0px;
+        }
+
+        /* Conteúdo principal */
+        .content {
+            padding: 20px;
+        }
+
+        .gallery {
+            margin-left: 20%;
+        }
+
+        .gallery img {
+            border-radius: 8px;
+        }
+
+        /* Imagem sticky */
+        .gallery .sticky {
+            position: sticky;
+            top: 80px;
+            border: 3px solid red;
+        }
+
+        /* Caixa de texto rolável */
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 120px;
+            overflow: auto;
+            background: #fdfdfd;
+            margin-top: 20px;
+        }
+
+        /* Rodapé fixo */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .muda {
+            border: 3px solid green;
+        }
+
+        .muda:hover {
+            border: 3px solid blue;
+            
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">Cabeçalho Fixo</div>
+
+    <div class="menu">
+        <h3>Menu Lateral</h3>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Galeria de Imagens</h2>
+        <div class="gallery">
+            <img class="muda" src="https://picsum.photos/id/12/300/300" alt="img1">
+            <img class="sticky" src="https://picsum.photos/id/13/300/300" alt="img2">
+            <img id="troca" onclick="trocaImage()" src="https://picsum.photos/id/14/300/300" alt="img3">
+            <img src="https://picsum.photos/id/16/300/300" alt="img4">
+            <img src="https://picsum.photos/id/17/300/300" alt="img5">
+            <img src="https://picsum.photos/id/18/300/300" alt="img6">
+            <img src="https://picsum.photos/id/19/300/300" alt="img7">
+            <img src="https://picsum.photos/id/20/300/300" alt="img8">
+            <img src="https://picsum.photos/id/21/300/300" alt="img9">
+            <img src="https://picsum.photos/id/22/300/300" alt="img10">
+            <img src="https://picsum.photos/id/23/300/300" alt="img11">
+            <img src="https://picsum.photos/id/24/300/300" alt="img12">
+            <img src="https://picsum.photos/id/25/300/300" alt="img13">
+            <img src="https://picsum.photos/id/26/300/300" alt="img14">
+            <img src="https://picsum.photos/id/27/300/300" alt="img15">
+            <img src="https://picsum.photos/id/28/300/300" alt="img16">
+            <img src="https://picsum.photos/id/29/300/300" alt="img17">
+            <img src="https://picsum.photos/id/30/300/300" alt="img18">
+            <img src="https://picsum.photos/id/31/300/300" alt="img19">
+            <img src="https://picsum.photos/id/32/300/300" alt="img20">
+            <img src="https://picsum.photos/id/33/300/300" alt="img21">
+            <img src="https://picsum.photos/id/34/300/300" alt="img22">
+            <img src="https://picsum.photos/id/35/300/300" alt="img23">
+            <img src="https://picsum.photos/id/36/300/300" alt="img24">
+            <img src="https://picsum.photos/id/37/300/300" alt="img25">
+            <img src="https://picsum.photos/id/38/300/300" alt="img26">
+            <img src="https://picsum.photos/id/39/300/300" alt="img27">
+            <img src="https://picsum.photos/id/40/300/300" alt="img28">
+            <img src="https://picsum.photos/id/41/300/300" alt="img29">
+            <img src="https://picsum.photos/id/42/300/300" alt="img30">
+        </div>
+
+        <h2>Caixa de Texto Rolável</h2>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <p>Excepteur sint occaecat cupidatat non proident.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+
+    <div class="footer">Rodapé Fixo</div>
+    <script>
+        function trocaImage() {
+            let imagem = Math.floor(Math.random() * 100);
+            const img = document.querySelector('#troca');
+            img.src = `https://picsum.photos/id/${imagem}/300/300`;
+        }
+    </script>
+</body>
+
+</html>

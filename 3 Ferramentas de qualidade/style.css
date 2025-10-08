@@ -1,0 +1,124 @@
+/* // <weight>: Use a value from 300 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+
+.rubik-fontenova {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
+}
+
+#fundo{
+    background-image: url("fundo.jpeg");
+    background-attachment: fixed;
+
+    
+}
+
+
+main {text-align: center; 
+
+}
+p {
+    text-align: justify;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.espaco {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.guia {
+    margin-top: 20px;
+
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #244372;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    height: 110px;
+}
+.iconesite {
+    float: left;
+        height: 100px;
+        width: 100px;
+        border-radius: 1000px;      
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+.divisao {
+        text-align: center;
+        width: 43%;
+        background: #ffd51b;
+        padding: 50px;
+        align-items: center;
+        width: auto;
+        margin: 10px;
+    }
+.divisaoimg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+.titulo {
+        font-family: 'Federant', sans-serif;
+        font-weight: 600;
+        text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        color: #ffd51b;
+        margin-top:10px;
+        padding-left: 70px;
+       }
+.pdca {
+        width: 50%;
+        box-shadow: #0000002c 5px 5px 20px;
+        
+}
+.titulos {
+        font-size: x-large;
+        color: #000;
+        text-align: center;
+}
+.W2H {
+        box-shadow: #0000002c 5px 5px 20px;
+        width: 50%;
+        text-align: center;
+}
+.rodape {
+    background-color: #244372;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.botoes {
+    width: 100%;
+    background-color: #244372;
+    color: #ffd51b;
+    margin-left: 30px;
+    margin-top: 0px;
+    transition: all 0.3s ease-in-out;
+    }
+
+.ul {margin: 0%;}
+
+html {scroll-behavior: smooth;}
+
+/* NÃO FUNCIONOU (ATUALIZAR DPS Q ESTIVER EM JS)*/ 
+#botoes.scrolled {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #244372;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,113 @@
+
+main {text-align: center; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+.cabecalho {
+    top: 0;
+    width: 100%;
+    background-color: #244372;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding-bottom: 40px;
+}
+.iconesite {
+        height: 140px;
+        width: 140px;
+        border-radius: 1000px;      
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+.divisao {
+        text-align: center;
+        width: 43%;
+        background: #ffd51b;
+        padding: 50px;
+        align-items: center;
+    }
+.divisaoimg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 12px;
+    }
+.titulo {
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 8px 10px 8px rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        color: #ffd51b;
+        text-align: left; 
+        margin-top: -100px;
+        margin-left: 170px;
+    }
+.pdca {
+        width: 70%;
+        height: 80%;
+}
+.titulos {
+        font-size: x-large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #000;
+        text-align: center;
+}
+.W2H {
+        width: 70%;
+        text-align: center;
+}
+.rodape {
+    background-color: #244372;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.botoes {
+    width: 100%;
+    background-color: #244372;
+    color: #ffd51b;
+    margin-left: 15px;
+    margin-top: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    transition: all 0.3s ease-in-out;
+    }
+.guia { 
+    position: fixed;
+    text-align: center; 
+}
+
+.ul {
+    padding: 0%;
+    border-radius: 90px;
+    margin-top: -170px; 
+    margin-left: 160px;
+    background-color: #244372; 
+    width: 90%;  
+    ;
+}
+.boto1 {
+    width: 100%;
+    background-color: #244372;
+    color: #ffd51b;
+    margin-left: -40px;
+    margin-top: 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    transition: all 0.3s ease-in-out; 
+}
+
+html {scroll-behavior: smooth;}
+
+/* NÃO FUNCIONOU (ATUALIZAR DPS Q ESTIVER EM JS)*/ 
+#botoes.scrolled {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #244372;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
