@@ -1,3 +1,10 @@
+:root {
+    --main-color: #DFD8C6;
+    --laranja: #C76436;
+    --cinza: #2D2E2E;
+    --fundojanelas: linear-gradient(145deg, #534f45 0% 40%, #2D2E2E 60% 90%, #7e3f22);
+}
+
 .bbh-sans-bartle-regular {
   font-family: "BBH Sans Bartle", sans-serif;
   font-weight: 400;
@@ -100,8 +107,8 @@
 
 }
 .titulosini {
-    display: block;
     color: black;
+    display: block;
     text-decoration: none;
     margin: 0;
     padding: 2vh 2vh 2vh 2vh;
@@ -143,11 +150,12 @@
     box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.336);
 }
 #titcont {
+    text-decoration: none;
     margin: 1vh;
     padding:0;
     font-family: "BBH Sans Bartle", monospace, serif;
     font-size: medium;
-    color: #C76436;
+    color: var(--laranja)
 }
 .lojascont  {
     justify-content: space-around;
@@ -158,13 +166,54 @@
     gap: 5px;
     padding: 5px;
     flex-wrap: wrap;
-        background: linear-gradient(145deg, #534f45 0% 40%, #2D2E2E 60% 90%, #7e3f22);
+    background: var(--fundojanelas)
 }
 .lojascont img {
     max-height: 20vh;
     min-height: 0;
+}
+.lojascont img:hover{
+    scale: 1.2;
+    transition: scale 0.3s;
+}
+#vermais:hover{
+    scale: 1.1;
+    transition: scale 0.3s;} 
+.filtromenu { 
+    display: grid;
+    grid-template-areas: 
+    "item1 item1 item1"
+    "item2 item3 item4";
+    grid-template-columns: auto auto auto;
+    gap: 1vh;
+    background: var(--fundojanelas);
+    padding: 1vh;
+    text-align: center;
+}
+.filtromenu div {
+    padding: 2vh;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+.filtromenu div:hover {
+    scale: 1.03;
+    transition: scale 0.6s;
 
 }
+#item1 { 
+
+    grid-area: item1;
+}
+#item2 {
+    grid-area: item2;
+}
+#item3 {
+    grid-area: item3;
+}
+#item4 {
+    grid-area: item4;
+}
+
 #vermais {
     writing-mode: vertical-rl;
     box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.336);
@@ -174,7 +223,7 @@
     margin: 0vh 1vh 0.5vh 1vh;
     font-family: "BBH Sans Bartle", monospace, serif;
     font-size: medium;
-    color: #C76436;
+    color: var(--main-color);
     padding: 10vh 0vh 10vh 0vh;
     display: flex;
     align-items: center;
@@ -183,6 +232,9 @@
     border-radius: 5px;
     background: linear-gradient(45deg,#aca58d 0% 5%,#2D2E2E 20% 50% ,#7e3f22 55% 55%, #2D2E2E 60% 80%, #aca58d 95% 100%);
     text-shadow: 1px 0px 3px #DFD8C6;
+}
+#vermais a{
+    color: var(--main-color);
 }
 h1 {
     color: #C76436;
@@ -197,7 +249,9 @@ main {
 body { 
     background-color: #DFD8C6;
 }
-
+footer {
+    
+}
 /* EXIBIÇÕES MOBILE*/
 /*TABLETS E CELULARES LARGOS*/
 @media (max-width: 1350px) { 
