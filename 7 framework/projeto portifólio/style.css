@@ -1,0 +1,80 @@
+*{
+    z-index: 1;
+}
+.menu {
+    background-color: cadetblue;
+    background-image: url(assets/panorama.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: start;
+    animation: degrade 200s linear infinite;
+    background-size: 400% 100%;
+}
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 100%;
+    }
+}
+.menu2{
+ background-image: url(assets/terra2.webp);
+}
+.barras{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    font-family: "Press Start 2P";
+    color: white;
+    text-align: center;
+    background-image: url(assets/terra1.webp);
+    padding: 5vh;
+}
+.barrabt{
+    background-image: url(assets/terra1.webp);
+    padding: 5vh;
+    position: fixed;
+    bottom: 0;
+}
+main {
+    margin-bottom: 17vh;
+    margin-top: 17vh;
+    justify-items: center;
+    align-items: center;
+}
+main section {
+    width: 100%;
+}
+
+.mcfont1 {
+    font-family: "Press Start 2P";
+    background-color: rgb(126, 126, 126);
+    background: linear-gradient(180deg, #acabab 0% 5%, #767777 10% 90%, #474747 95% 100%);
+}
+.pjfont{
+    background: none;
+    color: white;
+    font-family: "Press Start 2P";
+}
+.pjfont2{
+    color: #767777;
+}
+.pjfont:hover{
+    border: 2px solid white;
+}
+.mcfont {
+    color: white;
+    font-family: "Press Start 2P";
+    background: linear-gradient(180deg, #acabab 0% 5%, #767777 10% 96%, #474747 97% 100%);
+}
+.mcfont:hover,.mcfont1:hover {
+    color: #ffe58f;
+    background: linear-gradient(180deg, #7c98d4 0% 5%, #6a81b4 10% 92%, #49597e 90% 100%);
+}
+.menubtn:{
+    background: linear-gradient(45deg, #DFD8C6 0% 5%, #2D2E2E 20% 50%, #C76436 55% 55%, #2D2E2E 60% 80%, #DFD8C6 95% 100%);
+   
+}

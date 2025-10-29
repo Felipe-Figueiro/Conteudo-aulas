@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+</head>
+
+<body>
+    <h1>Busca ep</h1>
+    <input type="text" id="cep" placeholder="Digite seu CEP">
+    <button onclick="buscarCEP()">Buscar</button>
+    <p id="texto"></p>
+    <script>
+        /* Script para pegar cep e buscar na API    */
+        function buscarCEP(){
+            let input = document.getElementById("cep").value;
+            const ajax = new XMLHttpRequest();
+            ajax.open("GET", "https://viacep.com.br/ws/" + input + "/json");
+            ajax.send();
+
+            ajax.onload = function () {
+                document.getElementById("texto").innerHTML = this.responseText;
+                let obj = JSON.parse(this.responseText)
+                let bairro = obj.logradouro;
+                let localidade = obj.cidade;
+                let estado = obj.estado;
+            }
+            document.getElementById("texto").innerHTML = "Logradouro:"+ bairro + <br> + " cidade:"">
+        }
+    </script>
+</body>
+
+</html>

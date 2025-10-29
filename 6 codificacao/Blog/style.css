@@ -1,0 +1,404 @@
+:root {
+    --main-color: #DFD8C6;
+    --laranja: #C76436;
+    --cinza: #2D2E2E;
+    --fundojanelas: linear-gradient(145deg, #534f45 0% 40%, #2D2E2E 60% 90%, #7e3f22);
+}
+
+.roboto-mainfont {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+}
+
+.bbh-sans-bartle-regular {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.iconesite {
+    height: 15vh;
+    border-radius: 100%;
+    margin-left: 3vh;
+}
+
+.cabecalho {
+    box-shadow: 0px 0px 5px black;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-image: url(assets/cabecalho.png);
+    display: flex;
+    background: linear-gradient(160deg, #534f45 11%, #2D2E2E 35% 80%, #944b29 95% 100%)
+}
+
+.menubtn {
+    font-family: "BBH Sans Bartle", "Roboto";
+    position: fixed;
+    min-width: 20.5vh;
+    max-width: 20.5vh;
+    text-align: center;
+    padding: 1vh 0vh;
+    background: linear-gradient(45deg, #DFD8C6 0% 5%, #2D2E2E 20% 50%, #C76436 55% 55%, #2D2E2E 60% 80%, #DFD8C6 95% 100%);
+    background-size: 400% 100%;
+    color: #C76436;
+    z-index: 1000;
+}
+
+.menubtn:hover {
+    background: linear-gradient(45deg, #DFD8C6 0% 5%, #2D2E2E 20% 50%, #C76436 55% 55%, #2D2E2E 60% 80%, #DFD8C6 95% 100%);
+    animation: degrade 7s linear infinite;
+    animation-delay: 0.2s;
+    background-size: 400% 100%;
+}
+
+@keyframes degrade {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+.menubtn:hover .menuesq {
+    display: block;
+}
+
+.menuesq {
+    /* REVERTER BLOCK TO NONE P/ OCULTAR MENU */
+    display: none;
+    margin-top: 4vh;
+    background-color: #DFD8C6;
+    height: 85%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 998;
+    max-width: 20.5vh;
+    min-width: 20.5vh;
+}
+
+.naveg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.naveg a {
+    text-decoration: none;
+    color: #2D2E2E;
+    font-family: "Roboto", "Bebas Neue";
+    font-size: medium;
+    margin: 0.5vh;
+    padding: 0.5vh 0vh 0.5vh 0.5vh;
+}
+
+.naveg a:hover {
+    background: linear-gradient(127deg, #494741, #2D2E2E 50%, #753b20 100%);
+    color: #DFD8C5;
+    border-radius: 1vh;
+    padding: 0.7vh 0vh 0.7vh 0.7vh;
+    transition: all 0.3s;
+}
+
+.not1 {
+    width: 100%;
+}
+
+.titnot {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0;
+    padding: 2vh 2vh 2vh 2vh;
+    font-family: "Roboto", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background: linear-gradient(145deg, #534f45 0% 40%, #2D2E2E 60% 90%, #7e3f22);
+
+}
+
+.titulosini {
+    color: black;
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    padding: 2vh 2vh 2vh 2vh;
+    font-family: "Roboto", 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+.noticia {
+    border-radius: 1px;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: white;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.336);
+}
+
+.ultimas {
+    overflow-x: scroll;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1px;
+    text-align: center;
+
+}
+
+.ultimas div {
+    display: flex;
+    background: linear-gradient(45deg, #f7edd5, #aca58d);
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.336);
+    width: 250px;
+    margin: 1vh;
+    flex-shrink: 0;
+    margin: 0vh 1vh 0.5vh 1vh;
+    border: 2px solid #C76436;
+    border-radius: 5px;
+    text-shadow: 1px 0px 3px #DFD8C6;
+}
+
+#cont {
+    border-radius: 1px;
+    border: 1px solid rgb(73, 73, 73);
+    background-color: #494741;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.336);
+}
+
+#titcont {
+    text-decoration: none;
+    margin: 1vh;
+    padding: 0;
+    font-family: "BBH Sans Bartle", monospace, serif;
+    font-size: medium;
+    color: var(--laranja)
+}
+
+.lojascont {
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas:
+        "1" "2" "3" "4" "5" "6";
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+    background: var(--fundojanelas)
+}
+
+.lojascont img {
+    max-height: 20vh;
+    min-height: 0;
+}
+
+.lojascont img:hover {
+    scale: 1.2;
+    transition: scale 0.3s;
+}
+
+#vermais:hover {
+    scale: 1.1;
+    transition: scale 0.3s;
+}
+
+.filtromenu {
+    display: grid;
+    grid-template-areas:
+        "item1 item1 item1"
+        "item2 item3 item4";
+    grid-template-columns: auto auto auto;
+    gap: 1vh;
+    background: var(--fundojanelas);
+    padding: 1vh;
+    text-align: center;
+}
+
+.filtromenu div {
+    padding: 2vh;
+    border-radius: 10px;
+    background-color: var(--main-color);
+}
+
+.filtromenu div:hover {
+    scale: 1.03;
+    transition: scale 0.6s;
+
+}
+
+#item1 {
+
+    grid-area: item1;
+}
+
+#item2 {
+    grid-area: item2;
+}
+
+#item3 {
+    grid-area: item3;
+}
+
+#item4 {
+    grid-area: item4;
+}
+
+#vermais {
+    writing-mode: vertical-rl;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.336);
+    width: 25px;
+    margin: 1vh;
+    flex-shrink: 0;
+    margin: 0vh 1vh 0.5vh 1vh;
+    font-family: "BBH Sans Bartle", monospace, serif;
+    font-size: medium;
+    color: var(--main-color);
+    padding: 10vh 0vh 10vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #C76436;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #aca58d 0% 5%, #2D2E2E 20% 50%, #7e3f22 55% 55%, #2D2E2E 60% 80%, #aca58d 95% 100%);
+    text-shadow: 1px 0px 3px #DFD8C6;
+}
+
+#vermais a {
+    color: var(--main-color);
+}
+
+.h1site {
+    color: #C76436;
+    margin-left: 3vh;
+    font-family: "BBH Sans Bartle";
+    font-size: x-large;
+    font-weight: 300;
+}
+/*               PAGINA PESQUISA DE PREÇO           PAGINA PESQUISA DE PREÇO            */
+.buscamenu {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.buscamenu a {}
+
+.buscamenu a:hover {
+    position: ;
+    padding: 1vh;
+}
+.buscatitulo {
+    text-align: center;
+}
+#srch {
+    background-color: #DFD8C6;
+    color: black;
+}
+
+#srch:hover {
+    color: #ffffff;
+    background-color: #2D2E2E;
+}
+#imputi {}
+#button-addon1{color: black;}
+#button-addon1:hover {background-color: #C76436;}
+
+.pesquisarpa {
+    background-color: #494741;
+}
+/*         PÁGINA DE CONTATOS           PÁGINAS DE CONTATOS     */
+#cont form{
+    color: #f7edd5;
+    margin: 1vh
+}
+
+/*       ALTERAÇÕES DE TODAS AS PÁGINAS           ALTERAÇÕES DE TODAS AS PÁGINAS      */
+main {
+    margin: 15.2vh 35vh 15.2vh 35vh;
+}
+
+/* top right bottom left*/
+body {
+    background-color: #DFD8C6;
+}
+
+footer {}
+
+/* EXIBIÇÕES MOBILE*/
+/*TABLETS E CELULARES LARGOS*/
+@media (max-width: 1350px) {
+    main {
+        margin: 15.2vh 15vh 15.2vh 15.5vh;
+    }
+
+    /* top right bottom left*/
+    .menuesq {
+        max-width: 15.5vh;
+        min-width: 15.5vh;
+    }
+
+    .menubtn {
+        min-width: 15.5vh;
+        max-width: 15.5vh;
+    }
+}
+
+/* CELULARES */
+@media (max-width: 850px) {
+    main {
+        margin: 15.2vh 13vh 15.2vh 13.5vh;
+    }
+
+    /* top right bottom left*/
+    .menubtn {
+        min-width: 13.5vh;
+        max-width: 13.5vh;
+    }
+
+    .menuesq {
+        max-width: 13.5vh;
+        min-width: 13.5vh;
+    }
+
+    .titnot {
+        font-size: small;
+        padding: 1vh 1vh 1vh 1vh;
+    }
+
+    .lojascont {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 520px) {
+    main {
+        margin: 15.2vh 5vh 15.2vh 13.5vh;
+    }
+
+    /* top right bottom left*/
+    .menubtn {
+        min-width: 13.5vh;
+        max-width: 13.5vh;
+    }
+
+    .menuesq {
+        max-width: 13.5vh;
+        min-width: 13.5vh;
+    }
+
+    .titnot {
+        font-size: small;
+        padding: 0
+    }
+}

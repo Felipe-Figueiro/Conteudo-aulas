@@ -1,0 +1,92 @@
+.cabecalho {
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    padding: 1vh 0vh 1vh 0vh;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    position: absolute;
+    left: 1vh;
+    top: 1vh;
+   margin-top: 1vh;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(to right,#9013FE 10%, #348cf1 80%, #77b5fc 100%);
+    padding: 1vh 2vh;
+    border-radius: 4px;
+}
+.menu a:hover{    
+    background:linear-gradient(to right,#8fbff5 10%, #71b0f8 20%, #d977f1 50%);
+    transition: all 0.5s ease; 
+    box-shadow: 0 0 10px white;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.1vh;
+}
+.itens {
+    display: none;
+    flex-direction: column;
+    margin-top: 1vh;
+    gap: 1vh;
+    background-color: #4A90E2;
+    padding: 1vh;
+}
+.menu:hover .itens {
+    display: flex;
+    flex-direction: column;
+}
+h1 {margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+    justify-self: center;}
+
+body {margin: 0;}
+main {margin: 1Vh 0vh 0 1vh;}
+footer {
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to right, #4A90E2, #9013FE);
+    font-family: Arial, sans-serif;
+}
+.navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+    overflow-y: scroll;
+    max-height: 88vh;
+    justify-content: center;
+}
+.navegacao img {
+    flex:2;
+    width: 25vh;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px black;
+    cursor: pointer;
+    transition: transform 0.2s ease;   }
+
+.navegacao img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+@media (min-width: 1300px) {
+    .navegacao img {
+        width: 45vh;
+        height: 45vh;
+    }
+}
+@media (max-width: 700px) {
+    .navegacao img {
+        width: 20vh;
+        height: auto;
+    }
+}
