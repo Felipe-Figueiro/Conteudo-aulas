@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="">
+        <H1>Tags de formulários</H1>
+            <p>Input tipo texto</p>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <P>Input tipo email</P>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required><br><br>
+
+        <p>Input tipo senha(password)</p>
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha" required> <br><br>
+        
+        <p>Input tipo number</p>
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" id="idade"> <br><br>
+
+        <p>Input tipo telefone</p>
+        <label for="telefone">Telefone</label>
+        <input type="tel" name="telefone" id="telefone"> <br><br>
+
+        <p>Input tipo date</p>
+        <label for="data">Data de Nascimento</label>
+        <input type="date" name="data" id="data"> <br><br>
+
+        <p>Input tipo url</p>
+        <label for="site">Site pessoal</label>
+        <input type="url" name="site" id="url"> <br><br>
+
+        <p>Input tipo cor</p>
+        <label for="cor">Cor favorita</label>
+        <input type="color" name="cor" id="cor"> <br><br>
+
+        <p>input tipo range</p>
+        <label for="volume">volume</label>
+        <input type="range" name="volume" id="volume"> <br><br>
+
+        <P>Input tipo data</P>
+         <label for="data">Data de Nascimento</label>
+        <input type="date" name="data" id="data"> <br><br>
+
+        <fieldset>
+            <p>QUALQUER COISA DENTRO DESTE CAMPO, INCLUSIVE IMAGENS</p>
+        </fieldset>
+       <P>INPUT TIPO CHECKBOX</P>
+        <p>quais linguagens você conhece?</p>
+        <label><input type="checkbox" name="linguagens" value="html">HTML</label>
+        <label><input type="checkbox" name="linguagens" value="CSS">CSS</label>
+        <label><input type="checkbox" name="linguagens" value="JavaScript">JavaScript</label>
+
+        <p>Tipo radio</p>
+        <label><Input type="radio" name="sexo" value="Masculino"></Input>masculino</label>
+        <label><Input type="radio" name="sexo" value="Feminino"></Input>feminino</label>
+        <label><Input type="radio" name="sexo" value="Outro"></Input>outro</label>
+
+        <p>Tipo select e option</p>
+        <label for="pais">pais</label>
+        <select name="pais" id="pais" <option value="">Selecione
+            <option value="BR">Brasil</option>
+            <option value="PT">Portugal</option>
+            <option value="US">Estados Unidos</option>
+        </select>
+
+        <label for="file">Selecione um arquivo</label>
+        <input type="file" id="foto" name="file"><br><br>
+        <hr>
+
+        <label for="bio">Biologia</label>
+        <textarea name="bio" id="bio" rows="4" cols="50" placeholder="fale um pouco mais"></textarea>
+
+        <input type="hidden" name="form_id" value="12345"> <br><br>
+
+        <button type="submit">Enviar</button>
+        <input type="submit" value="enviar"></button>
+        <button type="reset">Limpar</button>
+        
+
+
+    </form>
+    
+</body>
+</html>

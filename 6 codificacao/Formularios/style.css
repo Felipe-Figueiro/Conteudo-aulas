@@ -1,0 +1,13 @@
+#nome {
+    width: 300px;
+}
+#confirmsenha {
+
+}
+h1 { font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    background-color: deepskyblue;
+    margin: 0px;
+    position:sticky;
+}
