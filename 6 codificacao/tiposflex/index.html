@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX GROW</title>
+</head>
+<style>
+.container{
+    display: flex;
+    width: auto;
+    border: 2px solid black;
+}
+.div{    
+    width: 200px;
+    padding: 10px;
+    border: 1px solid brown;
+    text-align: center;
+}
+.item1{
+    flex-shrink: 3;
+    background-color: aquamarine;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid brown;
+    text-align: center;
+}
+.item2{
+    flex-grow: 1;
+    background-color:coral;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid brown;
+    text-align: center;
+}
+.item3{
+    flex-grow: 2;
+    background-color: khaki;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid brown;
+    text-align: center;
+}
+</style>
+<body>
+    <section class="container">
+ <div class="item1">ITEM 1</div>   
+  <div class="item2">ITEM 2</div>   
+   <div class="item3">ITEM 3</div>   
+   </section>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de QR Code</title>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <style>
+        body{
+            background: white;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+        .card  {
+            background-color: white;
+            width: 320px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 2px 6px rgb(216, 216, 216);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: medium;
+            border-radius: 10px;
+            border: 1px solid rgb(212, 212, 212);
+            outline: none;
+        }
+        button{
+            background: rgb(11, 117, 238);
+            color: white;
+            font-size: medium;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #qrcode {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--
+    <div class="container">
+        <h2>QR Code com biblioteca local</h2>
+        <div id="qrcode-local" style="margin: 20px;"></div>
+    </div>
+    
+    <script>
+        // CORRIGIDO: Usando o ID 'qrcode-local'
+        var qrcode = new QRCode("qrcode-local", {
+            text: "https://www.google.com",
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+    </script>
+-->
+    <div class="card">
+        <h2>Gerador de QR</h2>
+        <input type="text" id="link" placeholder="Digite o link ou texto">
+        <button id="gerar" onclick="generateQRcode()">Gerar o QRCode</button>
+        <img id="qrcode-externo" style="margin:30px" alt="QR CODE">
+
+        <script>
+            const input = document.getElementById("link");
+            const btn = document.getElementById("gerar");
+            const img = document.getElementById("qrcode-externo");
+            const apiURL = "https://api.qrserver.com/v1/create-qr-code/";
+
+            // CORRIGIDO: A função agora é assíncrona e contém toda a lógica da requisição
+            async function generateQRcode() {
+                // CORRIGIDO: Erro de sintaxe (faltava o '=')
+                const texto = input.value.trim(); 
+                
+                if (texto === "") {
+                    alert("Campo vazio, digite seu texto ou link");
+                    return;
+                }
+                img.src = "";
+                img.alt = "Gerando QR Code...";
+
+                try {
+                    // Prepara os parâmetros para a URL
+                    const params = new URLSearchParams({
+                        data: texto,
+                        size: "200x200",
+                        // CORRIGIDO: Typo de 'marign' para 'margin'
+                        margin: 10, 
+                        bgcolor: "ffffff",
+                        color: "000000",
+                        ecc: "H",
+                        
+                    });
+                    /********************************************
+                * data -> recebe texto
+                * size -> tamanho da imagem
+                * bgcolor -> fundo
+                * color -> codigo
+                * ecc -> L,M,Q,H
+                * margin -> pixel
+                * format -> png, svg, eps, gif
+                * charset-source -> caracteres
+                * charset-targe -> codificação usada
+                * download  -> baixa qr
+                * el -> tipo de qrcode
+                * style -> efeito visual 
+                * logo -> adiciona uma imagem dentro do qrcode
+                *********************************************/
+                // Limpa o QR Code anterior enquanto busca
+
+                    // CORRIGIDO: Sintaxe correta para o template literal da URL
+                    const response = await fetch(`${apiURL}?${params.toString()}`); 
+                    
+                    if (!response.ok) {
+                        throw new Error(`Erro HTTP! Status: ${response.status}`);
+                    }
+
+                    // Salva o QR Code gerado e exibe no documento 
+                    const blob = await response.blob();
+                    // CORRIGIDO: Typo de 'URl' para 'URL' (maiúsculo)
+                    const imagemURL = URL.createObjectURL(blob); 
+                    
+                    img.src = imagemURL;
+                    img.alt = "Seu QR Code gerado";
+                }
+                catch (error) {
+                    console.error(error);
+                    alert("Não foi possível gerar o QR code. Verifique sua conexão ou o link.");
+                    img.alt = "ERRO ao gerar QR Code";
+                }
+            }
+
+            // CORRIGIDO: Listener do botão (variável 'btn' correta)
+            btn.addEventListener("click", generateQRcode);
+            
+            // CORRIGIDO: Configura para usar o Enter
+            input.addEventListener("keypress", (e) => {
+                if (e.key === "Enter") {
+                    generateQRcode();
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>

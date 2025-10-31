@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<title>Metodologias Ágeis</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="assets/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+<Header>
+        <div class="cabecalho">
+        <p><img class="icone" src="assets/icone.jpg" alt="icone"></p>
+        <p class="titulo">Metodologias Ágeis</p>
+        <div class="navegacao">
+                <div class="navegacao2">
+                        <a href="index.html" class="botao">INICIO</a>
+                        <a href="cadastro.html" class="botao">CADASTRO</a>
+                </div>
+                <div class="navegacao2">
+                        <a class="botao">FERRAMENTAS</a>
+                        <a class="botao">CONTATO</a>
+                </div>
+        </div>
+
+        </div>
+</Header>
+</head>
+<body>
+    <p class="janela1">
+         <div class="janela">
+            <P id="H1"><h1>Cadastro</h1></P>
+            <form id="cadastro" action="https://example.com/process&quot; method="POST">
+            <p>
+                <label for="nome">Nome completo</label>
+                <input type="text" id="nome" name="nome" required placeholder="Ex: Decanoato de Nandroloda">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="durabolin@gmail.com" required>
+            
+            </p>
+            <p style="display: inline;">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" placeholder="8 dígitos ou mais"  minlength="8">
+
+                <label for="confirmsenha">Confirme sua senha</label>
+                <input type="password" name="confirmsenha" id="confirmsenha" placeholder="Repita sua senha" required>
+
+            </p>
+            <p>
+                <label for="sexo">Sexo</label>
+                <label>
+                    <input type="radio" name="sexo" value="masculino">masculino</input>
+                    <input type="radio" name="sexo" value="feminino">feminino</input>
+                    <input type="radio" name="sexo" value="outro">outro</input>
+                </label>
+            <!-- colocando os inputs no mesmo "name" restringe a somente uma seleção-->
+            </p>
+
+            <p>
+                <p> Interesses:  </p>
+                <label for="interesses"></label>
+                <input type="checkbox" name="interesses" value="jogos">Jogos virtuais</input>
+                    <input type="checkbox" name="interesses" value="musica">Músicas</input>
+                    <input type="checkbox" name="interesses" value="series">Séries e filmes</input>
+                    <input type="checkbox" name="interesses" value="esportes">Esportes</input>
+                    <input type="checkbox" name="interesses" value="tecnologia">Tecnologia</input>
+                    <input type="checkbox" name="interesses" value="redes">Redes Sociais</input>
+            </p>
+
+            <p>
+                <P>Foto de perfil</P>
+                <label for="foto"></label>
+                <input type="file" name="foto" id="foto" accept="image/*">
+            </p>
+            <p style="display: inline;">
+                <label for="pais">Endereço</label>
+                <select name="pais" id="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="PT">Portugal</option>
+                    <option value="USA">Estados Unidos</option>
+                </select>
+                <select name="estado" id="estado">
+                    <option value="RS">Rio Grande do sul</option>
+                    <option value="PR">Parana</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+                <label for="endereço">Logradouro</label>
+                <input type="text" name="endereço" id="endereço">
+                <br><br>
+            </p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+            <p>"  "
+            </p>
+        </form>
+    <script src="script.js"></script>
+                </div>
+        </p>
+
+
+    
+</body>
+</html> 

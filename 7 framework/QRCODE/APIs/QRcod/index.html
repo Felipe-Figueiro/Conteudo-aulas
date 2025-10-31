@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H2>testando api QRCode</H2>
+    <input type="text" id="texto" placeholder="digite o link">
+    <button onclick="generateQRcode()">Gere o QRcode</button>
+    <div id="qrcode" style="margin:30px"></div>
+
+    <script>
+        function generateQRcode() {
+            let QR = document.getElementById("texto").value;
+            var code = new QRcode("qrcode",{
+                width: 200,
+                height:200,
+                colorDark: "#000000",
+                colorLight: "#ffffff",
+                correctLevel: QRcode.CorrectLevel.H
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+}
+.cabecalho {
+    background-color: #6dff8d;
+    box-shadow: 2px 2px 5px #888888;
+    padding: 15px;
+    text-align: center;
+    margin: 0p;
+    width: 100%;
+    position: fixed;
+    font-size: large;
+}
+.lateral {
+    margin-top: 50px;
+    background-color: #e4ff6d;
+    box-shadow: 2px 3px 8px #888888;
+    text-align: center;
+    width: 20%;
+    height: 900px;
+    float: left;
+    list-style: none;
+    padding-bottom: 90vh;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.menu li:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+.conteudo {
+    margin-left: 20%;
+    padding-top: 4vh;
+    padding-left: 2vh;
+    padding-bottom: 90vh;
+    background-color: #6d9eff;
+    height: 900px;
+    box-shadow: 2px 3px 8px #888888;
+    display:grid;
+    
+}
+.foto1 {
+    width: 39%;
+    margin: 1%;
+    box-shadow: 1px 1px 8px #888888;
+    position: sticky;
+    top: 50px;
+    
+}
+.foto1:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 4px 6px 5px #88ff00;
+    border: #88ff00 solid 2px;
+    cursor: pointer;
+
+}
+.fotos {
+    width: 39%;
+    margin: 1%;
+    box-shadow: 1px 1px 8px #888888;
+    float: auto;
+}
+.fotos:hover {
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 4px 6px 12px #555555;
+}
+
+.texto {
+    color: white;
+    font-size: large;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    overflow: scroll;
+    max-height: 30vh;
+}

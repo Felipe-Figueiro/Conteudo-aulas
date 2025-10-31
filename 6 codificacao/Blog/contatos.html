@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsticicle Inicio</title>
+</head>
+
+<body style="margin: 0; background-color: #DFD8C6;">
+    <header>
+        <div class="cabecalho">
+            <img src="assets/iconesite.png" alt="icone" class="iconesite">
+            <p class="h1site">Newsticicle</p>
+        </div>
+    </header>
+    <section>
+        <div class="menubtn"> Menu
+            <div class="menuesq">
+                <div class="naveg">
+                    <a href="Index.html">Inicio</a>
+                    <a href="noticias.html">Ultimas Noticias</a>
+                    <a href="buscador.html">Buscador de precos</a>
+                    <a href="contatos.html">Contatos</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <main>
+        <section id="cont">
+            <div id="titcont">Entrar em contato</div>
+            <form id="ticket" action="/submit_form" method="post">
+                <p>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required placeholder="Nome e sobrenome">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="xxxx@xxxx.com" required>
+
+                </p>
+                <p style="display: inline;">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="8 dígitos ou mais" minlength="8">
+
+                    <label for="confirmsenha">Confirme sua senha</label>
+                    <input type="password" name="confirmsenha" id="confirmsenha" placeholder="Repita sua senha"
+                        required>
+
+                </p>
+                <p>
+                    <label for="sexo">Sexo</label>
+                    <label>
+                        <input type="radio" name="sexo" value="masculino">masculino</input>
+                        <input type="radio" name="sexo" value="feminino">feminino</input>
+                        <input type="radio" name="sexo" value="outro">outro</input>
+                    </label>
+                    <!--colocando os inputs no mesmo "name" restringe a somente uma seleção, sofri pra saber oq tinha de errado-->
+                </p>
+
+                <p>
+                <p> Assunto: </p>
+                <label for="assunto"></label>
+                <input type="checkbox" name="assunto[]" value="ajuda">Solicitar suporte
+                <input type="checkbox" name="assunto[]" value="relato">Relatar problema
+                <input type="checkbox" name="assunto[]" value="anunciar">Anuncie conosco
+                <input type="checkbox" name="assunto[]" value="sugestao">Sugestões
+                <input type="checkbox" name="assunto[]" value="outro">Outro 
+                <input type="text" name="outroassunto" id="outroassunto"></input>
+                
+
+                </p>
+
+                <p>
+                <P>Imagem (se necessário)</P>
+                <label for="foto"></label>
+                <input type="file" name="foto" id="foto" accept="image/*">
+                </p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+                </p>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
