@@ -13,19 +13,25 @@
 </head>
 
 <body>
+
+    <header class="header">
+        <span class="material-symbols-outlined">home</span>
+        <span class="material-symbols-outlined">search</span>
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">shopping_basket</span>
+    </header>
     <div>
-        <header class="header">
-            <span class="material-symbols-outlined" tyle="font-variation-settings: 'FILL' 1">shopping_basket</span>
-            <span class="material-symbols-outlined">home</span>
-            <span class="material-symbols-outlined">search</span>
-            <span class="material-symbols-outlined">favorite</span>
-        </header>
-        <main class="card" id="produto-card"></main>
-        <footer class="footer">Todos direitos reservados</footer>
-
-
-
+        <main id="produto-card"></main>
     </div>
+    <div id="modal" class="modal">
+        <div class="contmodal">
+            <p class="titmodal">Finalize sua compra!</p>
+            <img class="qrcode" src="assets/QRCODE.png" alt="qrcode">
+            <button id="btn-fechar" class="btn-comprar">Fechar</button>
+
+        </div>
+    </div>
+    <footer class="footer">Todos direitos reservados</footer>
     <script src="script.js"></script>
 </body>
 
