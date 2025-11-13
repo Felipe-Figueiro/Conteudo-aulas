@@ -3,7 +3,7 @@
 }
 .menu {
     background-color: cadetblue;
-    background-image: url(assets/panorama.png);
+    background-image: url(img/panorama.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -21,7 +21,7 @@
     }
 }
 .menu2{
- background-image: url(assets/terra2.webp);
+ background-image: url(img/terra2.webp);
 }
 .barras{
     z-index: 999;
@@ -30,11 +30,11 @@
     font-family: "Press Start 2P";
     color: white;
     text-align: center;
-    background-image: url(assets/terra1.webp);
+    background-image: url(img/terra1.webp);
     padding: 5vh;
 }
 .barrabt{
-    background-image: url(assets/terra1.webp);
+    background-image: url(img/terra1.webp);
     padding: 5vh;
     position: fixed;
     bottom: 0;
@@ -77,4 +77,12 @@ main section {
 .menubtn:{
     background: linear-gradient(45deg, #DFD8C6 0% 5%, #2D2E2E 20% 50%, #C76436 55% 55%, #2D2E2E 60% 80%, #DFD8C6 95% 100%);
    
+}
+.centra{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+    
 }
