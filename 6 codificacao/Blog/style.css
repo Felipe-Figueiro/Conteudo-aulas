@@ -39,7 +39,7 @@
     top: 0;
     width: 100%;
     z-index: 999;
-    background-image: url(assets/cabecalho.png);
+    background-image: url(img/cabecalho.png);
     display: flex;
     background: linear-gradient(160deg, #534f45 11%, #2D2E2E 35% 80%, #944b29 95% 100%)
 }

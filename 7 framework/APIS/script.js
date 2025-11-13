@@ -82,7 +82,7 @@ modal.addEventListener("click", function (evento) {
 
 
 /**
-/// API PARA GRAFICOS DE DADOS 
+/// API PARA GRAFICOS DE DADOS não consegui rodar no js, somente no html.
 async function carregadados() {
     //faz uma requisição a api
     const resposta = await fetch("https://dummyjson.com/products");
