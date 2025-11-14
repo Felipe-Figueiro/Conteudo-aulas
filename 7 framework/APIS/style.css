@@ -42,10 +42,9 @@ body {
 }
 
 .card img {
+    object-fit: cover;
     width: 100%;
     height: 240px;
-    object-fit: fill;
-
 }
 
 .card h2 {
@@ -272,4 +271,103 @@ footer a {
     to{
         transform: translateX(-75%);
     }
+}
+/**  CSS DO HTML CARRINHO  */
+
+.container-carrinho {
+    max-width: 90vw;
+    margin: 7vh 8vw;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-carrinho h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: green;
+}
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    gap: 15px;
+}
+
+.item-carrinho img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.info-item {
+    flex-grow: 1;
+    min-width: 150px;
+}
+.info-item h2 {
+    font-size: 1.1rem;
+    margin: 0;
+}
+.info-item p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.controle-quantidade {
+    display: flex;
+    align-items: center;
+}
+
+.btn-qtde {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.controle-quantidade span {
+    padding: 0 15px;
+    font-size: 1.1rem;
+}
+
+.btn-remover {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.btn-remover:hover {
+    background-color: #cc0000;
+}
+
+.soma-total {
+    margin-top: 30px;
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.btn-comprar-final {
+    background: green;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.12s;
+}
+.btn-comprar-final:hover {
+    background: rgb(1, 94, 1);
 }
